@@ -1,0 +1,121 @@
+{% extends "base.html"%}
+{% block title %}· Registro{% endblock %}
+{% block content %}
+
+<div class="text-center">
+    <h1>ONL-INE</h1>
+    <h2>Registro al servicio</h2>
+</div>
+<div class="container">
+<main>
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Información general</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Ingrese un nombre válido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Ingrese un apellido válido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="curp" class="form-label">CURP</label>
+              <input type="text" class="form-control" id="curp" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Ingrese un CURP válido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="sexo" class="form-label">Sexo</label>
+              <select class="form-select" id="sexo" required>
+                <option value="">...</option>
+                <option>Hombre</option>
+                <option>Mujer</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor seleccione un sexo válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+              <div class="invalid-feedback">
+                Por favor ingrese una dirección e-mail válida.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="password">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="">
+              <div class="invalid-feedback">
+                Por favor ingrese una contraseña válida.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="preguntaSeguridad1" class="form-label">Pregunta de seguridad 1</label>
+              <select class="form-select" id="preguntaSeguridad1" required>
+                <option value="">Elije una pregunta...</option>
+                <option>¿Cuál es el nombre de su primer maestro?</option>
+                <option>¿Cuál es el segundo nombre de tu padre?</option>
+                <option>¿Cuál es tu ciudad natal?</option>
+                <option>¿Cuál es tu nombre de tu primer mascota?</option>
+                <option>¿Cuál es tu libro favorito?</option>
+            <input type="text" class="form-control" id="respuesta_1" placeholder="Respuesta 1" required>
+            </div>
+
+            <div class="col-12">
+              <label for="preguntaSeguridad2" class="form-label">Pregunta de seguridad 2</label>
+              <select class="form-select" id="preguntaSeguridad2" required>
+                <option value="">Elije una pregunta...</option>
+                <option>¿Cuál es el nombre de su primer maestro?</option>
+                <option>¿Cuál es el segundo nombre de tu padre?</option>
+                <option>¿Cuál es tu ciudad natal?</option>
+                <option>¿Cuál es tu nombre de tu primer mascota?</option>
+                <option>¿Cuál es tu libro favorito?</option>
+            <input type="text" class="form-control" id="respuesta_2" placeholder="Respuesta 2" required>
+            </div>
+
+            <div class="col-12">
+              <label for="preguntaSeguridad3" class="form-label">Pregunta de seguridad 3</label>
+              <select class="form-select" id="preguntaSeguridad3" required>
+                <option value="">Elije una pregunta...</option>
+                <option>¿Cuál es el nombre de su primer maestro?</option>
+                <option>¿Cuál es el segundo nombre de tu padre?</option>
+                <option>¿Cuál es tu ciudad natal?</option>
+                <option>¿Cuál es tu nombre de tu primer mascota?</option>
+                <option>¿Cuál es tu libro favorito?</option>
+            <input type="text" class="form-control" id="respuesta_3" placeholder="Respuesta 3" required>
+            </div>
+          </div>
+
+          <hr class="my-4">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Está de acuerdo con los términos y condiciones</label>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
