@@ -3,3 +3,5 @@
 ## Abraham Chalita
 ## Eli Martínez
 ## Rodrigo Mejía
+
+### Planteamiento:
