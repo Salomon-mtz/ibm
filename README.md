@@ -1,4 +1,4 @@
-# Try'n 2 hak: Proyecto IBM: Onl-INE
+# Try'n 2 hak - Proyecto IBM: Onl-INE
 ## Alfonso Mijangos, Abraham Chalita, Eli Martínez, Rodrigo Mejía
 
 ### Planteamiento:
